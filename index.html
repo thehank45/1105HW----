@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>揆翰的網路名片</title>
+    <style>
+        /* 全域樣式與動態背景 */
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #56254c;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* 外框卡片容器 (帶有霓虹光暈效果) */
+        .card-container {
+            width: 100%;
+            max-width: 500px;
+            background: rgba(20, 15, 38, 0.8);
+            border: 2px solid #e056fd;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 0 25px rgba(224, 86, 253, 0.3),
+                        inset 0 0 15px rgba(224, 86, 253, 0.15);
+            text-align: center;
+        }
+
+        /* 大頭貼樣式 */
+        .avatar-container {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff9ff3, #feca57);
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #ffeaa7;
+        }
+
+        /* 標題與簡介 */
+        h1 {
+            font-size: 1.8rem;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #375d89;
+            margin-bottom: 30px;
+        }
+
+        /* 各區塊標題與內文 */
+        h2 {
+            font-size: 1.1rem;
+            color: #64dfdf;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #f1f2f6;
+            margin: 8px 0;
+        }
+
+        .highlight {
+            color: #1ba8e4;
+            font-weight: bold;
+        }
+
+        /* 項目清單樣式 */
+        .list-group {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .list-group li {
+            margin: 10px 0;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* 社群連結與頁尾 */
+        .links {
+            margin-top: 15px;
+        }
+
+        .links a {
+            color: #74b9ff;
+            text-decoration: underline;
+            margin: 0 8px;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+
+        .links a:hover {
+            color: #22804d;
+        }
+
+        footer {
+            margin-top: 35px;
+            font-size: 0.8rem;
+            color: #437ec1;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <!-- 大頭貼區域 -->
+        <div class="avatar-container">
+            <!-- 可將 src 替換為您的圖片連結 -->
+          <img src="LINE_ALBUM_20241113-15高二大學之旅_260130_12.jpg" alt="揆翰的大頭照">
+        </div>
+
+        <!-- 主標題 -->
+        <h1>嗨，我是揆翰 👋</h1>
+        <div class="subtitle">資訊傳播學系(科技組)一年級 ｜ <i>正在學寫網頁新手村的愚民</i></div>
+
+        <!-- 關於我 -->
+        <h2>🙋 關於我</h2>
+        <p>來自 <span class="highlight">嘉義</span>，我有一個夢想是想盡一切辦法把程式這門課學好，來賺大錢</p>
+        <p>最近的目標是：<i>大一上(期末)要督促完成老師指定給予的菜單</i></p>
+
+        <!-- 我喜歡的東西 -->
+        <h2>💖 我喜歡的人事物</h2>
+        <ul class="list-group">
+            <li>⚾🗽:支持一個沒有Jeter在就拿不到冠軍的破洋基，當了11年的小丑🤡</li>
+            <li>👨‍👩‍👦周末:除了打🏀以外還有陪我的家人們從事戶外活動⛺</li>
+            <li>📷 :用手機拍同學上廁所</li>
+        </ul>
+
+        <!-- 這學期想完成的事 -->
+        <h2>🎯 這學期想完成的事</h2>
+        <p>每週強迫自己，學期末把c++與python的基本語法學扎實 </p>
+
+        <!-- 聯絡方式 -->
+        <h2>📮 找到我</h2>
+        <div class="links">
+            <a href="https://www.instagram.com/thehank45?rkey=MWrRN3d6ejF0YW51eg%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+            <a href="https://github.com/thehank45" target="_blank">GitHub</a>
+        </div>
+        <!-- 頁尾宣告 -->
+        <footer>
+            © 2026 翰克 ・ 用 HTML 親手做的第一個網頁-1
+        </footer><!-- 在 index.html 中加入 -->
+<div class="next-page-btn">
+  <a href="page2.html" class="btn">查看我的詳細經歷與作品集 ➔</a>
+</div>
+    </div>
+</body>
+</html>
